@@ -26,3 +26,8 @@ window.addEventListener("mousemove", (e) => {
   mouse.x = e.x;
   mouse.y = e.y;
 });
+
+(function animate() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  requestAnimationFrame(animate);
+})();
