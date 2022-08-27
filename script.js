@@ -32,7 +32,7 @@ class Particle {
     this.speedX = Math.random() * 7 - 1.5;
     this.speedY = Math.random() * 7 - 1.5;
     this.timer = 0;
-    this.color = Math.random() * 360;
+    this.color = hue;
     hue++;
     if (hue === 360) hue = 0;
   }
